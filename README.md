@@ -29,3 +29,9 @@ On a Mac: `npm i @capacitor/ios && npx cap add ios && npx cap open ios`.
 
 ## Release build
 Debug APKs are fine for personal use. For Play Store, create a keystore and run `./gradlew bundleRelease` in `android/`, then sign it.
+
+## Hosting the web version (Vercel / GitHub Pages / Netlify)
+The app lives in `www/` (there is no `index.html` in the repo root). 
+- **Vercel:** `vercel.json` already sets the output directory to `www`. Framework preset: *Other*, no build command.
+- **GitHub Pages:** Settings → Pages → Source: **GitHub Actions**, then run *Deploy web app to GitHub Pages*. (Or use the flat `signal-web` zip where `index.html` is in the root.)
+- **Netlify / any static host:** publish the `www` folder.
