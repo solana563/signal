@@ -1,0 +1,11 @@
+{
+  "appId": "com.ubayanda.signal",
+  "appName": "SIGNAL",
+  "webDir": "www",
+  "backgroundColor": "#05060b",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": true },
+  "plugins": {
+    "CapacitorHttp": { "enabled": true }
+  }
+}
